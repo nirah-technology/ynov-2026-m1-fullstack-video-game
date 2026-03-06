@@ -1,0 +1,21 @@
+[project]
+name = "ynov-2026-m1-fullstack-video-game-rpg-python"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Nicolas Metivier",email = "nicolas.a.metivier@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "nirahtech", from = "src"}]
+
+[tool.poetry.scripts]
+game = "nirahtech.main:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
