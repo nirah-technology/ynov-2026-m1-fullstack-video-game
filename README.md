@@ -30,3 +30,5 @@ Découvrir l'architecture logicielle au travers du développement d'un jeu vidé
   - Monitoring And Observability Plan
   - Risk Register
   - Runbook
+
+![Alt text here](ynov-26-m1-fullstack-game.svg)
