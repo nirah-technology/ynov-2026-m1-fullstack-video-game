@@ -64,8 +64,8 @@ class PlayerProfileBuilder:
         return PlayerProfile(
             id=self.__id,
             pseudo=self.__pseudo,
-            race=self.__race,
-            classes=self.__classes,
+            breed=self.__race,
+            classe=self.__classes,
             level=self.__level,
             experience=self.__experience,
             stats=self.__stats,
@@ -147,3 +147,32 @@ class WeaponFactory:
             critical_rate=critical_rate,
             attack_speed=attack_speed
         )
+    
+class Skeleton:
+    def walk(self):
+        pass
+
+    def sprint(self):
+        pass
+
+    def stand_by(self):
+        pass
+
+class ExoSkeleton:
+    def __init__(self, skeleton: Skeleton):
+        self.__skeleton: Skeleton = skeleton
+
+    def walk(self):
+        print("ExoSkeleton walk...")
+        self.__skeleton.walk()
+
+    def stand_by(self):
+        print("ExoSkeleton stand_by...")
+        self.__skeleton.stand_by()
+
+    def __sprint(self):
+        print("ExoSkeleton sprint...")
+        self.__skeleton.sprint()
+    
+    def die(self):
+        pass

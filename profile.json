@@ -8,5 +8,35 @@
         "experience": 0,
         "stats": [],
         "inventory": []
+    },
+    {
+        "id": "test",
+        "pseudo": "Test",
+        "breed": "Human",
+        "classe": "Warrior",
+        "level": 1,
+        "experience": 0,
+        "stats": [],
+        "inventory": []
+    },
+    {
+        "id": "test",
+        "pseudo": "Test",
+        "breed": "Human",
+        "classe": "Warrior",
+        "level": 1,
+        "experience": 0,
+        "stats": [],
+        "inventory": []
+    },
+    {
+        "id": "test",
+        "pseudo": "Test",
+        "breed": "Human",
+        "classe": "Warrior",
+        "level": 1,
+        "experience": 0,
+        "stats": [],
+        "inventory": []
     }
 ]
