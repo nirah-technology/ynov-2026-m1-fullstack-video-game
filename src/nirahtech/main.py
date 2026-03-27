@@ -65,11 +65,15 @@ def main_microkernel():
     kernel.run_all("get_helmet")
 
 def main_microservice():
-    from .profile.infrastructure.adapters.inputs.microservice import ProfileMicroService
+    from .profile.infrastructure.adapters.inputs.microservice_profile import ProfileMicroService
+    from .profile.infrastructure.adapters.inputs.microservice_guilde import GuildeMicroService
+
     import uvicorn
 
-    microservice = ProfileMicroService()
-    uvicorn.run(microservice.app, host="0.0.0.0", port=8000)
+    port = 8000
+    microservice = ProfileMicroService(port=port)
+    microservice = GuildeMicroService(port=port)
+    uvicorn.run(microservice.app, host="0.0.0.0", port=port)
 
 def main():
     pass
