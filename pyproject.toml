@@ -8,6 +8,9 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.13,<4.0"
 dependencies = [
+    "fastapi (>=0.135.2,<0.136.0)",
+    "py-eureka-client (>=0.13.3,<0.14.0)",
+    "uvicorn (>=0.42.0,<0.43.0)"
 ]
 
 [tool.poetry]
@@ -15,6 +18,7 @@ packages = [{include = "nirahtech", from = "src"}]
 
 [tool.poetry.scripts]
 game = "nirahtech.main:main"
+profile-microservice = "nirahtech.profile.infrastructure.adapters.inputs.microservice:main"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
