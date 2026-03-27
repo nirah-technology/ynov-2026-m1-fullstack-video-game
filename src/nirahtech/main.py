@@ -6,10 +6,10 @@ from .profile.application.domain.models import WeaponFactory, Weapon, Skeleton, 
 from .profile.application.domain.stuff import *
 from .profile.application.domain.mobs import Mob
 
-from .kernel import AdvancedMicroKernel
 
+def main_microkernel():
+    from .kernel import AdvancedMicroKernel
 
-def main():
     db_file = Path("profile.json")
     db = JsonPersistenceAdapter(db_file)
 
@@ -63,3 +63,13 @@ def main():
     kernel = AdvancedMicroKernel()
     kernel.load_zipped_plugins()
     kernel.run_all("get_helmet")
+
+def main_microservice():
+    from .profile.infrastructure.adapters.inputs.microservice import ProfileMicroService
+    import uvicorn
+
+    microservice = ProfileMicroService()
+    uvicorn.run(microservice.app, host="0.0.0.0", port=8000)
+
+def main():
+    pass

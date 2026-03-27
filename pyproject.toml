@@ -17,8 +17,8 @@ dependencies = [
 packages = [{include = "nirahtech", from = "src"}]
 
 [tool.poetry.scripts]
-game = "nirahtech.main:main"
-profile-microservice = "nirahtech.profile.infrastructure.adapters.inputs.microservice:main"
+plugin = "nirahtech.main:main_microkernel"
+profile-microservice = "nirahtech.main:main_microservice"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
