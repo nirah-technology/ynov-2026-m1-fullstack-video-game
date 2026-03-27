@@ -22,7 +22,7 @@ docker run -d -p 5672:5672 -p 15672:15672 --name rabbitmq rabbitmq:3-management-
 ## Travail à réaliser
 
 ### Étape 1 : Initialisation des projets Poetry
-Vous devez créer trois répertoires distincts, chacun étant une application Poetry autonome :
+Vous devez créer 1 projet par service, chacun étant une application Poetry autonome :
 - `profile-service` : Responsable de la gestion des profils joueurs.
 - `guilde-service` : Responsable de la gestion des guildes.
 - `stuff-service` : Responsable de la gestion des équipements.
