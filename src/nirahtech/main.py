@@ -6,7 +6,7 @@ from .profile.application.domain.models import WeaponFactory, Weapon, Skeleton, 
 from .profile.application.domain.stuff import *
 from .profile.application.domain.mobs import Mob
 
-from .kernel import MicroKernel
+from .kernel import AdvancedMicroKernel
 
 
 def main():
@@ -60,6 +60,6 @@ def main():
 
     ilidan.enter_in_fight_mode()
     
-    kernel = MicroKernel()
-    kernel.load_plugins()
-    kernel.run()
+    kernel = AdvancedMicroKernel()
+    kernel.load_zipped_plugins()
+    kernel.run_all("get_helmet")
