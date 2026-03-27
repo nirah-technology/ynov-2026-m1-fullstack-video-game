@@ -18,14 +18,14 @@ class StuffPart(ABC):
     def rarety(self) -> str:
         return self.__rarety
 
-class Helmet(StuffPart, ABC()):
+class Helmet(StuffPart, ABC):
     def __init__(self, name: str, required_level: int, rarety: str):
         super().__init__(name, required_level, rarety)
 
-class Gloves(StuffPart, ABC()):
+class Gloves(StuffPart, ABC):
     def __init__(self, name: str, required_level: int, rarety: str):
         super().__init__(name, required_level, rarety)
 
-class Chestplate(StuffPart, ABC()):
+class Chestplate(StuffPart, ABC):
     def __init__(self, name: str, required_level: int, rarety: str):
         super().__init__(name, required_level, rarety)

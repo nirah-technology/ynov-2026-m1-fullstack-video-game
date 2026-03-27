@@ -13,6 +13,11 @@ database = [
     ProfileDTO("01", "Nicolas", "nicolas@niratech.fr")
 ]
 
+stuff_microservives = [
+    "localhost:8001",
+    "localhost:8002"
+]
+
 def main():
 
     microservice = FastAPI()
